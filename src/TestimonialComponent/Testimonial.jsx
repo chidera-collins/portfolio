@@ -1,5 +1,6 @@
 import React from 'react'
 import Flag from 'react-world-flags'
+import { motion } from 'motion/react'
 
 function Testimonial() {
 
@@ -11,7 +12,12 @@ function Testimonial() {
                     <h1 className='text-[1.5rem] text-mainBg flex relative before:w-[30px] items-center before:mt-2 gap-[2px] before:h-[3px] before:rounded-md before:bg-mainBg lg:text-[2rem] font-bold'>TESTIMONIALS</h1>
                 </div>
                 <div className='w-[95%] min-h-[400px] grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-3 '>
-                    <div className='bg-white text-black p-[10px] grid grid-rows-[20%,50%,15%] gap-2 rounded-lg'>
+                    <motion.div 
+                         initial={{ x: -30 , opacity:0}}
+                         whileInView={{ x: 0, opacity:1 }}
+                         transition={{delay:1.5, duration:4}}
+                          viewport={{ once: true }}
+                    className='bg-white text-black p-[10px] grid grid-rows-[20%,50%,15%] gap-2 rounded-lg'>
                         <div className='flex justify-between'>
                             <div className='bg-[#10501094] h-[40px] px-3 w-[40px] flex items-center justify-center rounded-[50%]'>
                                 <div className='w-10 '>
@@ -49,8 +55,13 @@ function Testimonial() {
                         </div>
                        
                       
-                    </div>
-                    <div className='bg-white text-black p-[10px] gap-3 grid grid-rows-[10%,60%,15%]  rounded-lg'>
+                    </motion.div>
+                    <motion.div
+                          initial={{ x: 0 , opacity:0}}
+                          whileInView={{ x: 0, opacity:1 }}
+                          transition={{delay:1.5, duration:4}}
+                           viewport={{ once: true }}
+                     className='bg-white text-black p-[10px] gap-3 grid grid-rows-[10%,60%,15%]  rounded-lg'>
                         <div className='flex justify-between'>
                             <div className='bg-[#10501094] h-[40px] px-3 w-[40px] flex items-center justify-center rounded-[50%]'>
                                 <div className='w-10 '>
@@ -88,8 +99,13 @@ function Testimonial() {
                         </div>
                        
                       
-                    </div>
-                    <div className='bg-white text-black p-[10px] gap-3 grid grid-rows-[10%,60%,15%]  rounded-lg'>
+                    </motion.div>
+                    <motion.div 
+                        initial={{ x: 30 , opacity:0}}
+                        whileInView={{ x: 0, opacity:1 }}
+                        transition={{delay:1.5, duration:4}}
+                         viewport={{ once: true }}
+                    className='bg-white text-black p-[10px] gap-3 grid grid-rows-[10%,60%,15%]  rounded-lg'>
                         <div className='flex justify-between'>
                             <div className='bg-[#10501094] h-[40px] px-3 w-[40px] flex items-center justify-center rounded-[50%]'>
                                 <div className='w-10 '>
@@ -129,7 +145,7 @@ function Testimonial() {
                         </div>
                        
                       
-                    </div>
+                    </motion.div>
 
 
 
