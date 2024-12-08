@@ -101,7 +101,7 @@ function Testimonial() {
                       
                     </motion.div>
                     <motion.div 
-                        initial={{ x: 30 , opacity:0}}
+                        initial={{ x: 30, opacity:0}}
                         whileInView={{ x: 0, opacity:1 }}
                         transition={{delay:1.5, duration:4}}
                          viewport={{ once: true }}
