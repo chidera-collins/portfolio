@@ -29,7 +29,7 @@ function Portfoliocomponent() {
                     <h1 className='text-[1.4rem] font-bold capitalize text-white'>chidera collins</h1>
                </div>
                <div className='flex items-center  gap-2'>
-                <button className='btn btn-accent bg-white text-mainBg w-[120px] hover:text-black hover:shadow-lg hover:shadow-[yellow]  font-custom text-[1.2rem] font-semibold'>
+                <button className=' btn btn-accent bg-white text-mainBg w-[120px] hover:text-black hover:shadow-lg hover:shadow-[yellow]  font-custom text-[1.2rem] font-semibold'>
                     <a href="mailto:chideracollins24@gmail.com"> Hire me</a>
                 </button>
                 <button className='btn btn-accent bg-white text-mainBg w-[100px] hover:text-black hover:shadow-lg hover:shadow-[yellow] font-custom text-[1.2rem] '>

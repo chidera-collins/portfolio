@@ -15,7 +15,7 @@ function ProjectComponent({project=[]}) {
                 </section>
                 <div className='w-[95%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 bg-black min-h-[300px] p-[10px]'>
                     {project.map((item,index)=>(
-                        <div key={index} className="card card-compact bg-[#10501094] group p-[10px]  shadow-xl">
+                        <div key={index} className="card  card-compact bg-[#10501094] group p-[10px]  shadow-xl">
                         <figure>
                           <img
                             src={item.img}
