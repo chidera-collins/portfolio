@@ -20,7 +20,7 @@ function ProjectComponent({project=[]}) {
                           <img
                             src={item.img}
                             alt={item.about}
-                            className='group-hover:scale-125 transition duration-200'
+                            className='group-hover:scale-100 transition duration-200'
                             
                             />
                         </figure>
